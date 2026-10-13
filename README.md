@@ -37,7 +37,7 @@ of them still online. Each signal flags one repo, the fake activator, and nothin
 Two rules that look obvious did not survive that run.
 
 - **"Pipe to a shell from a non-GitHub host."** That is how 38 of the 314 legitimate repos
-  install, codex, opencode, rustup and uv among them. A filter on it hides one trending repo
+  install, codex and opencode among them, plus several that pull in rustup or uv that way. A filter on it hides one trending repo
   in eight, so only the obfuscated forms count.
 - **"Owner account younger than 30 days."** The lure's owner was 34 days old on the day the
   digest sent it. A throwaway shows in the gap between the account and the repo, not in the
