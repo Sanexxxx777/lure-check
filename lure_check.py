@@ -62,7 +62,7 @@ _CODELESS_FILE_RE = re.compile(r"^(?:(?:readme|license|licence)(?:\.[a-z0-9]+)?|
 _REPO_NAME_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 
 
-# --- the rules (no network) -------------------------------------------------
+# The rules (no network).
 
 def _normalize(raw: str) -> str:
     """Undo cheap obfuscation: look-alike chars, zero-width chars, PowerShell
@@ -144,7 +144,7 @@ def lure_reason(meta: dict, raw_readme: str, owner_created_at_fn, top_level_fn) 
     return owner_reason(repo_created, owner_created, size_kb, top_level)
 
 
-# --- GitHub client (stdlib) -------------------------------------------------
+# GitHub client (stdlib).
 
 def _headers(accept: str | None = None) -> dict:
     headers = {"User-Agent": "lure-check"}
@@ -253,7 +253,7 @@ class GitHub:
         return None
 
 
-# --- CLI --------------------------------------------------------------------
+# CLI.
 
 def check_repo(gh: GitHub, full_name: str) -> dict:
     """-> {repo, verdict: lure|ok|unknown, reason, partial: [notes]}."""
