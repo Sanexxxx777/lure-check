@@ -39,7 +39,7 @@ TINY_REPO_KB = 10
 TIMEOUT_S = 10
 API = "https://api.github.com"
 
-_ZERO_WIDTH_RE = re.compile("[​-‏⁠﻿]")  # escaped: no invisible chars in source
+_ZERO_WIDTH_RE = re.compile("[\u200b-\u200f\u2060\ufeff]")  # escaped: no invisible chars in source
 
 _REV_RE = re.compile(r"-join\b[^\n]{0,200}?\[\s*-1\s*\.\.", re.I)
 _IEX_IRM_RE = re.compile(
@@ -66,7 +66,7 @@ _REPO_NAME_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 
 def _normalize(raw: str) -> str:
     """Undo cheap obfuscation: look-alike chars, zero-width chars, PowerShell
-    backtick escapes (i`e`x) — and markdown code-span backticks along the way."""
+    backtick escapes (i`e`x), and markdown code-span backticks along the way."""
     text = unicodedata.normalize("NFKC", raw)
     text = _ZERO_WIDTH_RE.sub("", text)
     return text.replace("`", "")
@@ -270,7 +270,9 @@ def check_repo(gh: GitHub, full_name: str) -> dict:
             out["reason"] = gh.failure or "no data from GitHub"
         return out
     raw = gh.readme_raw(full_name)
-    no_readme = raw == "" and not gh.rate_limited
+    readme_note = None
+    if raw == "" and not gh.rate_limited:  # a 404 means no README; anything else means we could not read it
+        readme_note = "no README" if gh.not_found else "README unavailable"
     reason = lure_reason(meta, raw, gh.owner_created_at, lambda: gh.top_level_entries(full_name))
     if reason:  # a positive stands even if a later request failed
         out["verdict"], out["reason"] = "lure", reason
@@ -279,8 +281,8 @@ def check_repo(gh: GitHub, full_name: str) -> dict:
         out["reason"] = gh.failure
         return out
     out["verdict"] = "ok"
-    if no_readme:
-        out["partial"].append("no README")
+    if readme_note:
+        out["partial"].append(readme_note)
     out["partial"].extend(gh.notes)
     return out
 
