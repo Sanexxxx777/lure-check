@@ -1,0 +1,190 @@
+[
+ {
+  "repo": "1jehuang/jcode",
+  "line": "curl -fsSL https://jcode.sh/install | bash"
+ },
+ {
+  "repo": "Alishahryar1/free-claude-code",
+  "line": "curl -fsSL \"https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/install.sh\" | sh"
+ },
+ {
+  "repo": "Graphify-Labs/graphify",
+  "line": "| uv *(recommended)* | any | `uv --version` | `curl -LsSf https://astral.sh/uv/install.sh \\| sh` |"
+ },
+ {
+  "repo": "K-Dense-AI/scientific-agent-skills",
+  "line": "curl -LsSf https://astral.sh/uv/install.sh | sh"
+ },
+ {
+  "repo": "KnockOutEZ/wigolo",
+  "line": "Homebrew, `curl | sh`, and the single-file binary are covered in the [installation guide](docs/installation.md). Use one channel per machine; they all share `~/.wigolo`."
+ },
+ {
+  "repo": "NVIDIA/OpenShell",
+  "line": "curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh"
+ },
+ {
+  "repo": "Nasiko-Labs/nasiko",
+  "line": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
+ },
+ {
+  "repo": "NousResearch/hermes-agent",
+  "line": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash"
+ },
+ {
+  "repo": "OpenCut-app/OpenCut",
+  "line": "irm https://moonrepo.dev/install/proto.ps1 | iex"
+ },
+ {
+  "repo": "PrimeIntellect-ai/prime-agent",
+  "line": "curl -fsSL https://app.primeintellect.ai/prime-agent/install.sh | sh"
+ },
+ {
+  "repo": "QwenLM/Qwen-MM-Plugins",
+  "line": "curl -fsSL https://raw.githubusercontent.com/QwenLM/Qwen-MM-Plugins/main/install.sh | bash"
+ },
+ {
+  "repo": "Tencent/BrowserSkill",
+  "line": "curl -fsSL https://raw.githubusercontent.com/Tencent/BrowserSkill/main/install.sh | sh"
+ },
+ {
+  "repo": "Wei-Shaw/sub2api",
+  "line": "curl -sSL https://raw.githubusercontent.com/Wei-Shaw/sub2api/main/deploy/install.sh | sudo bash"
+ },
+ {
+  "repo": "agentlas-ai/Agentlas-OS",
+  "line": "curl -fsSL https://raw.githubusercontent.com/agentlas-ai/Agentlas-OS/main/scripts/install-all-runtimes.sh | bash"
+ },
+ {
+  "repo": "agentscope-ai/QwenPaw",
+  "line": "curl -fsSL https://qwenpaw.agentscope.io/install.sh | bash"
+ },
+ {
+  "repo": "alphaXiv/OpenResearch",
+  "line": "curl -LsSf https://openresearch.sh/install.sh | sh"
+ },
+ {
+  "repo": "anomalyco/opencode",
+  "line": "curl -fsSL https://opencode.ai/install | bash"
+ },
+ {
+  "repo": "arnegiacomo/fugleramme",
+  "line": "curl -fsSL https://raw.githubusercontent.com/arnegiacomo/fugleramme/main/install.sh | bash"
+ },
+ {
+  "repo": "bendlang/bend",
+  "line": "curl -fsSL https://bend-lang.com/install.sh | sh"
+ },
+ {
+  "repo": "debpalash/VoiceStudio",
+  "line": "curl -fsSL https://voicestudio.sh/install | sh"
+ },
+ {
+  "repo": "denoland/celld",
+  "line": "curl -fsSL https://celld.dev/install.sh | sh"
+ },
+ {
+  "repo": "earendil-works/pi",
+  "line": "curl -fsSL https://pi.dev/install.sh | sh"
+ },
+ {
+  "repo": "headroomlabs-ai/headroom",
+  "line": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && rustup default stable"
+ },
+ {
+  "repo": "holaboss-ai/holaOS",
+  "line": "curl -fsSL https://raw.githubusercontent.com/holaboss-ai/holaOS/refs/heads/main/scripts/install.sh | bash -s -- --launch"
+ },
+ {
+  "repo": "hydra-db/hydradb",
+  "line": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
+ },
+ {
+  "repo": "kirodotdev/KiroCrew",
+  "line": "curl -fsSL https://download.crew.kiro.dev/cli.sh | sh"
+ },
+ {
+  "repo": "kvcache-ai/AgentENV",
+  "line": "curl -fsSL https://raw.githubusercontent.com/kvcache-ai/AgentENV/main/scripts/install.sh | sudo bash"
+ },
+ {
+  "repo": "lexmount/moli",
+  "line": "powershell -ExecutionPolicy ByPass -c \"irm https://github.com/lexmount/moli/releases/latest/download/moli-installer.ps1 | iex\""
+ },
+ {
+  "repo": "lidge-jun/opencodex",
+  "line": "curl -fsSL https://bun.sh/install | bash"
+ },
+ {
+  "repo": "liustack/modlens",
+  "line": "curl -fsSL https://antigravity.google/cli/install.sh | bash"
+ },
+ {
+  "repo": "mvschwarz/openrig",
+  "line": "curl -fsSL https://raw.githubusercontent.com/mvschwarz/openrig/v0.6.8/scripts/install.sh | sh -s -- --dry-run"
+ },
+ {
+  "repo": "neilsonnn/image-blaster",
+  "line": "3. Run `claude` (install with `curl -fsSL https://claude.ai/install.sh | bash`)"
+ },
+ {
+  "repo": "nexu-io/open-design",
+  "line": "curl -fsSL https://open-design.ai/install.sh | sh -s <agent>"
+ },
+ {
+  "repo": "oblien/openship",
+  "line": "curl -fsSL https://get.openship.io | sh          # install  (or: npm i -g openship — needs Node 22+)"
+ },
+ {
+  "repo": "omlahore/RemoveMacAI",
+  "line": "curl -fsSL https://raw.githubusercontent.com/omlahore/RemoveMacAI/main/install.sh | bash -s app"
+ },
+ {
+  "repo": "openai/codex",
+  "line": "curl -fsSL https://chatgpt.com/codex/install.sh | sh"
+ },
+ {
+  "repo": "openinterpreter/openinterpreter",
+  "line": "curl -fsSL https://www.openinterpreter.com/install | sh"
+ },
+ {
+  "repo": "spinabot/brigade",
+  "line": "curl -fsSL https://brigade.spinabot.com/install.sh | sh"
+ },
+ {
+  "repo": "tinyhumansai/openhuman",
+  "line": "curl -fsSL https://raw.githubusercontent.com/tinyhumansai/openhuman/main/scripts/install.sh | bash"
+ },
+ {
+  "repo": "trycua/cua",
+  "line": "curl -fsSL https://cua.ai/install.sh | sh"
+ },
+ {
+  "repo": "usestrix/strix",
+  "line": "curl -sSL https://strix.ai/install | bash"
+ },
+ {
+  "repo": "vectorize-io/hindsight",
+  "line": "curl -fsSL https://hindsight.vectorize.io/get-cli | bash          # CLI"
+ },
+ {
+  "repo": "vercel-labs/fx",
+  "line": "⠀⠀⠀⢀⣿⣿⠃⠀⠀⠀⠀⢠⣦⠘⢿⣿⣷⡀⠀⠀             curl -fsSL https://fx.sh/setup.sh | bash"
+ },
+ {
+  "repo": "volcengine/OpenViking",
+  "line": "curl -fsSL https://openviking.ai/install | bash -s -- --yes --url <SERVER_URL>"
+ },
+ {
+  "repo": "xai-org/grok-build",
+  "line": "curl -fsSL https://x.ai/cli/install.sh | bash   # macOS / Linux / Git Bash"
+ },
+ {
+  "repo": "yczz/oc-english",
+  "line": "| Rust | stable | `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \\| sh` |"
+ },
+ {
+  "repo": "yetone/magpie",
+  "line": "curl -fsSL https://usemagpie.ai/install.sh | sh"
+ }
+]
